@@ -8,7 +8,7 @@ import { Sparkles } from 'lucide-react';
 export default function AdSlot({ 
   format = 'horizontal', // 'horizontal' (728x90), 'rectangle' (300x250), 'banner' (full-width responsive)
   className = '',
-  adClient = '', 
+  adClient = 'ca-pub-2731429442596581', 
   adSlot = '',   
   label = "Advertisement"
 }) {
@@ -25,7 +25,7 @@ export default function AdSlot({
       {/* Required AdSense label */}
       <div className="flex items-center justify-between px-3 py-1 text-[10px] uppercase font-mono tracking-widest text-muted-foreground">
         <span>{label}</span>
-        <span className="text-[9px] text-muted-foreground/60">AdSense Partner Unit</span>
+        <span className="text-[9px] text-muted-foreground/60">Google AdSense Verified</span>
       </div>
 
       <div className="relative overflow-hidden rounded-2xl border border-border bg-card/40 p-5 backdrop-blur-md flex items-center justify-center text-center shadow-sm">
@@ -42,10 +42,10 @@ export default function AdSlot({
           <div className="py-4 px-4 flex flex-col items-center justify-center gap-2 z-10">
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-mono">
               <Sparkles className="size-3" />
-              <span>Google AdSense Responsive Unit</span>
+              <span>Google AdSense Slot Active ({adClient})</span>
             </div>
             <p className="text-xs text-muted-foreground max-w-md leading-relaxed">
-              Place your Google AdSense publisher ID inside <code className="text-foreground font-mono text-[11px] bg-muted px-1.5 py-0.5 rounded">AdSlot.jsx</code> to serve real advertisements and monetize your audience.
+              Google AdSense verification tag is live. Ads will display automatically once your site review is approved by the Google AdSense team.
             </p>
           </div>
         )}
